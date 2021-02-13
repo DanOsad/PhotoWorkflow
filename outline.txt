@@ -1,0 +1,34 @@
+An application that tracks dates, events, and clients.
+It needs to be able to keep track of client's, their events, and the due dates associate with them.
+
+
+
+
+--
+Date Class
+- date : date
+- fromDate() : int
+- toDate() : int
+- isBooked() : boolean
+
+Event Class
+- isWedding() : boolean
+- isEngagement() : boolean
+- date : date (inheritted)
+- client(s) : int
+- id : int
+
+Couple Class
+- bride : str
+- groom : str
+- date : date (inheritted)
+
+Wedding Class
+- 
+
+Client / Person Class
+- name : str
+- address : str
+- email : str
+- phone : str
+- id : int
