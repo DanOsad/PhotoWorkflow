@@ -1,5 +1,8 @@
-class Event:
+from .client import Client
+
+class Event(Client):
     def __init__(self, category, eventId):
+        self.clientId = super().__init__(clientId)
         self.cat = category
         self.eventId = eventId
 

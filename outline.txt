@@ -32,3 +32,43 @@ Client / Person Class
 - email : str
 - phone : str
 - id : int
+
+##################################################
+
+--
+Client / Person Class
+- clientId : int
+- name : str
+- address : str
+- email : str
+- phone : str
+
+Event Class
+- eventId : int
+- clientId : int (inheritted)
+- isWedding() : boolean
+- isEngagement() : boolean
+- isFamily() : boolean
+- isHeadshot() : boolean
+- isCommercial() : boolean
+
+Date Class
+- dateId : date
+- eventId : int (inheritted)
+- clientId : int (inheritted)
+- fromDate() : int
+- toDate() : int
+- isBooked() : boolean
+
+Workflow Class:
+- dateId : date
+- eventId : int (inheritted)
+- clientId : int (inheritted)
+- isLeadWon() : boolean
+- isContractSigned() : boolean
+- isDepositPaid() : boolean
+- isShot() : boolean
+- isBackedUp () : boolean
+- isCulled() : boolean
+- isEdited() : boolean
+- isDelivered() : boolean
