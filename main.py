@@ -1,4 +1,8 @@
 from models import *
+import flask
+
+# FLASK SETUP
+app = Flask(__name__)
 
 # MAIN APP LOGIC HERE
 
@@ -15,4 +19,5 @@ def create_user(firstName, lastName):
     newUser = client.Client(firstName, lastName, clientId)
     print(f"{firstName} {lastName}'s user id is {clientId}")
 
-# if __name__ == "__main__"
+if __name__ == "__main__":
+    app.run(debug=True)
