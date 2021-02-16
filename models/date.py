@@ -1,15 +1,14 @@
-from .event import Event
 from datetime import date
 import calendar
 
-class Date(Event):
+class Date():
 
     # SET FIRST DAY OF THE WEEK TO SUNDAY
     calendar.setfirstweekday(6)
 
-    def __init__(self, yyyy, mm, dd):
-        self.eventId = super().__init__(eventId)
-        self.clientId = super().__init__(clientId)
+    def __init__(self, yyyy, mm, dd, *event, *client):
+        self.event = event
+        self.client = client
         self.year = yyyy
         self.month = mm
         self.day = dd

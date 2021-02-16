@@ -1,10 +1,8 @@
-from .client import Client
-
-class Event(Client):
-    def __init__(self, category, eventId):
-        self.clientId = super().__init__(clientId)
+class Event():
+    def __init__(self, category, event, client):
+        self.client = client
         self.cat = category
-        self.eventId = eventId
+        self.id = event.id
 
     def isWedding(self):
         if self.cat == "wedding":

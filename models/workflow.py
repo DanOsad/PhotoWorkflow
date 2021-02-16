@@ -1,6 +1,4 @@
-from .date import Date
-
-class Workflow(Date):
+class Workflow():
 
     def __init__(self, date, event, client):
         self.date = super().__init__(dateId)
