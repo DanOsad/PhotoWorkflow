@@ -6,7 +6,7 @@ class Date():
     # SET FIRST DAY OF THE WEEK TO SUNDAY
     calendar.setfirstweekday(6)
 
-    def __init__(self, yyyy, mm, dd, *event, *client):
+    def __init__(self, yyyy, mm, dd, event, client):
         self.event = event
         self.client = client
         self.year = yyyy
