@@ -11,3 +11,6 @@ class Client():
         self.price = newPrice
         priceDiff = float(newPrice - oldPrice)
         return self.price
+
+    def print_client(self):
+        return f"{self.firstName} {self.lastName}'s user id is {self.clientId}"

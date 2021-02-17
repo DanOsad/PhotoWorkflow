@@ -1,5 +1,5 @@
 import random as r
-from .models import *
+from models import *
 
 user_ids = []
 event_ids = []
@@ -22,8 +22,8 @@ def create_client(firstName, lastName):
     clientId = create_user_id()
     newClient = client.Client(firstName, lastName, clientId)
     # print(f"{firstName} {lastName}'s user id is {clientId}")
-    # return newClient
-    return f"{firstName} {lastName}'s user id is {clientId}"
+    return newClient
+    # return f"{firstName} {lastName}'s user id is {clientId}"
 
 def create_event(client):
     eventId = create_event_id()
